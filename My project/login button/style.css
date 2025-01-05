@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -29,9 +30,8 @@ body {
     font-style: normal;
     background-color: black;
 }
+
 .nav {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     border-radius: 90px;
@@ -57,23 +57,32 @@ body {
 
     font-size: 30px;
 }
+p.red1 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 
-.nav, .red1 {
+.nav,.red1 {
     display: flex;
-    padding-inline: 25px;
+    padding-inline: 10px;
     font-weight: 600;
     font-size: larger;
     gap: 50px;
-    margin-top: auto;
-    
+
+
 }
 
 .red1 a {
     color: rgb(189, 253, 228);
     text-decoration: none;
-    
-    
+
+
 }
+
+span.search {
+    margin-left: 0px;
+}
+
 .search {
     display: flex;
     justify-content: center;
@@ -81,6 +90,7 @@ body {
     gap: 10px;
     margin: auto;
 }
+
 .searchbox {
     padding: 5px;
     border-radius: 90px;
@@ -93,18 +103,20 @@ body {
     cursor: pointer;
 }
 
-.searchbox:hover{
+.searchbox:hover {
     border: 2px solid rgb(234, 28, 237);
     color: rgb(31, 214, 77);
 
 
 }
-.searchbox:focus{
+
+.searchbox:focus {
     border: 2px solid rgb(234, 28, 237);
     outline: none;
-    
+
 }
-.button{
+
+.buttons {
     border-radius: 90px;
     border: 2px solid rgb(189, 253, 228);
     height: 25px;
@@ -114,50 +126,61 @@ body {
     text-align: center;
     cursor: pointer;
 }
-.button:hover{
+
+.buttons:hover {
     border: 2px solid rgb(234, 28, 237);
     color: rgb(31, 214, 77);
 
 }
-.button:focus{
+
+.buttons:focus {
     border: 2px solid rgb(234, 28, 237);
     outline: none;
-    
+
 }
 
 .red1 a:hover {
     color: rgb(31, 214, 77);
 }
+
 .red1 a:active {
     color: rgb(206, 71, 239);
 }
-.auth-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-}
 
-.auth-buttons .login {
-    height: 40px;
-    width: 120px;
-    font-size: 16px;
-    font-weight: bold;
+span.join{
+    margin: auto;
 }
-
-.auth-buttons .signup {
-    height: 30px;
+.log{ border-radius: 90px;
+    border: 2px solid rgb(189, 253, 228);
+    height: 25px;
     width: 90px;
-    font-size: 14px;
-}
+    background-color: rgb(20, 12, 20);
+    color: rgb(189, 253, 228);
+    text-align: center;
+    cursor: pointer;
 
-.auth-buttons .login:hover, .auth-buttons .signup:hover {
-    border: 2px solid rgb(234, 28, 237);
+}
+.log:hover {
     color: rgb(31, 214, 77);
 }
 
-.auth-buttons .login:focus, .auth-buttons .signup:focus {
-    border: 2px solid rgb(234, 28, 237);
-    outline: none;
+.log:active {
+    color: rgb(206, 71, 239);
+}
+.sign{
+    border-radius: 90px;
+    height: 25px;
+    width: 60px;
+    border: 2px solid rgb(189, 253, 228);
+    background-color: rgb(20, 12, 20);
+    color: rgb(189, 253, 228);
+    text-align: center;
+    cursor:pointer;
+}
+.sign:hover {
+    color: rgb(31, 214, 77);
+}
+
+.sign:active {
+    color: rgb(206, 71, 239);
 }
